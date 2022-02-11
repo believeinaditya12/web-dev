@@ -26,9 +26,11 @@ li {
   margin: 32px;
   background-color: rgb(223, 136, 124);
   border-radius: 6px;
+  /* a in the below colour is alpha for the opacity */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 #description {
-  margin: 8px;
+  margin: 12px;
   margin-bottom: 50px;
 }
 /* in the place of description we can also use */
@@ -53,5 +55,5 @@ main p {
 /* if we want to highlight particular paragraph among the paragraphs which are already having the background colors */
 .highlight-goal {
   margin: 12px;
-  color: rgb(68, 143, 68);
+  color: rgb(1, 20, 1);
 }
