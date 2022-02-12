@@ -1,0 +1,59 @@
+header {
+  margin-bottom: 64px;
+}
+h1 {
+  font-size: 48px;
+  color: rgb(71, 62, 62);
+}
+a {
+  padding: 12px 48px;
+  background-color: rgb(167, 1, 78);
+  color: white;
+  border: 1px solid rgb(167, 1, 78);
+  border-radius: 4px;
+  font-size: 26px;
+}
+a:hover {
+  background-color: rgb(180, 12, 90);
+  text-decoration: none;
+}
+ol {
+  list-style: none;
+}
+li {
+  /* if we use two list syles then the list style which is written second will be applied */
+  padding: 16px;
+  margin: 32px;
+  background-color: rgb(223, 136, 124);
+  border-radius: 6px;
+  /* a in the below colour is alpha for the opacity */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+#description {
+  margin: 12px;
+  margin-bottom: 50px;
+}
+/* in the place of description we can also use */
+header p {
+  margin-bottom: 36px;
+}
+
+h2 {
+  color: rgb(78, 13, 5);
+  font-family: "Oswald", sans-serif;
+}
+
+main p {
+  margin: 12px;
+  color: rgb(71, 29, 22);
+}
+/* if we want to highlight the particular lines or goals */
+.daily-goal {
+  margin: 12px;
+  color: rgb(241, 245, 46);
+}
+/* if we want to highlight particular paragraph among the paragraphs which are already having the background colors */
+.highlight-goal {
+  margin: 12px;
+  color: rgb(1, 20, 1);
+}
