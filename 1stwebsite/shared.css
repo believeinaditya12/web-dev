@@ -1,0 +1,34 @@
+/* this whole is written in style element in html in head */
+h1 {
+  /* border will be add around the text to highlight */
+
+  font-family: "Oswald", sans-serif;
+}
+p {
+  font-family: "Fira Sans", sans-serif;
+}
+/* anchor elements styling */
+a {
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(167, 1, 78);
+  /* the below is used to remove the underline from the link */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  width: 200px;
+  height: 200px;
+  /* border radius gives rounded borders around the line */
+  border-radius: 100px;
+  /* text-align: will not have an effect asimage has no content; */
+  /* so to set image in the middle we will make changes in the body */
+}
+
+body {
+  background-color: rgb(233, 215, 207);
+  text-align: center;
+  color: rgb(83, 75, 75);
+  margin: 50px;
+}
