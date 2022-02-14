@@ -1,0 +1,60 @@
+/* #container {
+  background-color: rgb(82, 23, 81);
+  padding: 10px;
+  width: 600px;
+  /* if we use flex then it divides content into two parts and this means it contains two flex items */
+/* display: flex; */
+/* divide the elements row wise */
+/* flex-direction: row;
+  align-items: center;
+  justify-content: space-between; */
+p {
+  background-color: rgb(211, 88, 209);
+  margin: 10px;
+  width: 250px;
+}
+body {
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+ul {
+  /* background-color: rgb(250, 146, 63); */
+  list-style: none;
+  /* width: 250px;
+  margin: 10px; */
+  margin: 0;
+  padding: 0;
+  /* this is one of the new styles */
+  /* display: flex;
+  justify-content: flex-end; */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 15px top and bottom and 60px left and right */
+  padding: 15px 60px;
+}
+
+#page-logo a {
+  padding: 10px;
+  font-family: "Oleo Script", sans-serif;
+  color: rgb(245, 243, 160);
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+header ul {
+  display: flex;
+}
+header li {
+  margin-left: 20px;
+}
+li {
+  background-color: rgb(238, 212, 192);
+  width: 100px;
+  text-align: right;
+}
