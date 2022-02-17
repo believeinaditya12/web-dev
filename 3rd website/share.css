@@ -36,6 +36,13 @@ header {
   align-items: center;
   /* 15px top and bottom and 60px left and right */
   padding: 15px 60px;
+  /* to push the image behind the heading use position: absolute then image will get behind the header joe's travel page */
+  position: absolute;
+  /* position: fixed; so when we move the page up and down then heading will remain fixed so this is the meaning of this line */
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
 }
 
 #page-logo a {
@@ -53,8 +60,20 @@ header ul {
 header li {
   margin-left: 20px;
 }
+/* anchor tags which are present in the corners of the page */
+header a {
+  color: rgb(255, 251, 0);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 12px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 2);
+  border-radius: 6px;
+}
+header a:hover {
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 251, 0);
+}
 li {
-  background-color: rgb(238, 212, 192);
   width: 100px;
   text-align: right;
 }
