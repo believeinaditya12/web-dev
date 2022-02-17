@@ -1,74 +1,55 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(244, 234, 255);
-  color: black;
+#hero {
+  height: 800px;
+  background-image: url("ocean.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-h1 {
-  /* font family will be inherited from the font family of the body  */
-  color: black;
-}
-/* to set the heading of the page */
-header {
+#hero-content {
+  width: 900px;
+  /* a is here for the opacity in the text*/
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  /* box sizing: border box then content and padding get involved in single and extra space will not be left on the page*/
+  /* box sizing: content box then padding area is not left so extra space will be left on the page  */
+  border-radius: 8px;
+  /* make the text in the center inside the box */
   text-align: center;
-  padding: 32px;
-}
-/* to set the image which is present inside the header tag */
-header img {
-  width: 250px;
+  /* padding in the box to make the content in the box at center */
+  padding: 50px 0;
+  /* take the box in the center with the help of the margin */
+  margin: 0 auto;
+  /* to move the hero content down we are adding the below attributes to move the content in the center*/
+  /* if we uses position: absolute then it will take the content out of the box */
+  position: relative;
+  top: 200px;
+  /* if we use top : -200px then the content will move in the upward direction */
 }
 
-main {
-  background-color: rgb(122, 74, 218);
-  padding: 32px;
-  width: 700px;
-  /*we can't center the element here with text-align center because the main element here is not inline element so if we would add text-align: center first set the width and then set the margin to auto which will automatically set the body in the center */
-  margin: auto;
-  /* to set the rounded corners */
-  border-radius: 8px;
-  color: rgb(248, 241, 255);
-}
-ul {
+#hero-content h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  /* h1 gets the margin automatically when we set the font of the head so to remove that margin made it equal to the zero */
   margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
-li {
-  /* 14px top and bottom and 0 to the left and right margin */
-  margin: 14px 0;
-  padding-left: 10px;
-  border-left: 5px solid transparent;
-}
-a {
+#hero-content a {
   text-decoration: none;
-  color: rgb(36, 3, 102);
-  background-color: rgb(255, 237, 177);
-  /* we can use padding as inline elements uses box model */
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-a:hover {
-  text-decoration: underline;
-}
-/* it is used if we want to take the link from one place to another then this link is used */
-a:active {
-  background-color: rgb(250, 201, 39);
-}
-footer a {
-  padding: 12px 20px;
-  border-radius: 8px;
-  background-color: rgb(250, 201, 39);
-}
-footer a:active {
-  background-color: rgb(255, 186, 58);
-}
-/* to highlight some of the important lines */
-.extra-important {
-  color: rgb(255, 237, 177);
-  border-left: 5px solid rgb(247, 209, 85);
-}
-
-.highlight {
+  background-color: rgb(255, 251, 0);
+  padding: 12px 24px;
+  color: black;
+  font-size: 24px;
   font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+#hero-content a:hover {
+  background-color: rgb(255, 251, 0);
+}
+#destinations {
+  height: 200px;
+  width: 100px;
+  /* to position the elments next to each other we uses flex box */
 }
