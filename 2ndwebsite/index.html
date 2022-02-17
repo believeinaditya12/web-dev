@@ -1,59 +1,93 @@
-<!-- creating the landing page structure -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS basics summary</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="shared.css" />
-    <title>Flexbox</title>
+    <!-- code of the favicon for the local page  -->
+    <link rel="icon" href="2ndwebsite/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header id="container">
-      <div id="page-logo">
-        <a href="index.html">Travel Goals</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="places.html">Destinations</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-      </nav>
+    <header>
+      <h1>HTML and CSS Basics Summary</h1>
+      <img src="html-css.png" alt="HTML and CSS logos" />
     </header>
     <main>
-      <!-- id hero is the background image related things -->
-      <section id="hero">
-        <!-- id="hero-content" is to write content on the background image -->
-        <div id="hero-content">
-          <h1>Joe's Travel Page</h1>
-          <h2>Let's explore the world together!</h2>
-          <a href="places.html">Discover places</a>
-        </div>
-      </section>
-      <!-- nesting the elements into each other and we have to merge the two sections on the one page  -->
-      <section id="highlights">
-        <h2>Highlights</h2>
-        <ul id="destinations">
-          <li class="destination">
-            <img src="miami.jpg" alt="Miami streets on sunny day" />
-            <p>Miami <strong>USA</strong></p>
+      <section>
+        <h2>HTML Summary</h2>
+        <p>
+          HTML(Hypertext Markup Language) is used to define our page content,
+          structure and meaning. You don't use it for styling purposes. Use CSS
+          for that instead!
+        </p>
+        <ul id="html-list">
+          <li class="extra-important">
+            HTML uses "elements" to describe (annotate) content
           </li>
-          <li class="destination">
-            <img src="munich.jpg" alt="Munich stadium in winter" />
-            <p>Munich <strong>Germany</strong></p>
+          <li>
+            HTML elements typically have an opening tag, content and then a
+            closing tag
           </li>
-          <li class="destination">
-            <img src="barcelona.jpg" alt="Palm beach in Barcelona" />
-            <p>Barcelona <strong>Spain</strong></p>
+          <li class="extra-important">
+            You can also have void(empty) elements like images
+          </li>
+          <li>
+            There's a long list of available elements but you'll gain experience
+            over time, no worries
           </li>
         </ul>
+        <p>
+          Learn more about all available HTML elements on
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+            >MDN HTML element reference</a
+          >
+        </p>
+      </section>
+      <section>
+        <h2>CSS Summary</h2>
+        <p>
+          CSS (Cascading Style Sheets) is used for styling your page content.
+        </p>
+        <ul>
+          <li class="extra-important">
+            Styles are assigned via property-value pairs
+          </li>
+          <li>You can assign styles via the "style" attribute</li>
+          <li>
+            To avoid code duplication, you typically use global styles(e.g. via
+            the "style" element) instead
+          </li>
+          <li class="extra-important">
+            Alternatively, you can work with external stylesheet files which you
+            "link" to
+          </li>
+          <li>
+            When working with CSS, concepts like "inheritance", "specificity"
+            and the "box model" should be understood.
+          </li>
+        </ul>
+        <p>
+          Learn more about all available CSS properties and values on
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/element()"
+            >MDN CSS property reference</a
+          >
+        </p>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <a
+        href="https://www.researchgate.net/publication/271762450_Summary"
+        target="_blank"
+        >Download PDF Summary</a
+      >
+      <p>(c) Academind GmbH</p>
+    </footer>
   </body>
 </html>
