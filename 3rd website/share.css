@@ -77,3 +77,24 @@ li {
   width: 100px;
   text-align: right;
 }
+footer {
+  text-align: center;
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  text-decoration: none;
+  background-color: rgb(255, 251, 0);
+  padding: 12px 24px;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+footer a:hover {
+  background-color: rgb(255, 251, 0);
+}
