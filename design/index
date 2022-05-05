@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Best Courses</title>
+  </head>
+  <body>
+    <div class="card-container">
+      <h1>Monthly Subscription</h1>
+      <p class="card-info">Full flexibility and access to all our courses!</p>
+      <p class="price">$20</p>
+      <p class="price-info">
+        Recurring payment on monthly basis - cancel anytime!
+      </p>
+      <div class="sub-details">
+        <div class="sub-feature">
+          <!-- SVG is a language for describing 2D graphics in XML. Canvas draws 2D graphics, on the fly (with a JavaScript). SVG is XML based, which means that every element is available within the SVG DOM. You can attach JavaScript event handlers for an element. In SVG, each drawn shape is remembered as an object. -->
+          <div class="icon">
+            <svg class = "w-6 h-6" fill="none" stroke="currentcolor" viewbox="0
+            0 24 24"
+          </div>
+          <p class="sub-feature-text">40 courses</p>
+        </div>
+        <div class="sub-feature">
+          <!-- SVG is a language for describing 2D graphics in XML. SVG is XML based, which means that every element is available within the SVG DOM. You can attach JavaScript event handlers for an element. In SVG, each drawn shape is remembered as an object. -->
+          <!-- stroke is to make the border green color -->
+          <div class="icon">
+            <svg class = "w-6 h-6" fill="none" stroke="currentcolor" viewbox="0
+            0 24 24"
+          </div>
+          <p class="sub-feature-text">Downloadable resources</p>
+        </div>
+        <div class="sub-feature">
+          <!-- SVG is a language for describing 2D graphics in XML. Canvas draws 2D graphics, on the fly (with a JavaScript). SVG is XML based, which means that every element is available within the SVG DOM. You can attach JavaScript event handlers for an element. In SVG, each drawn shape is remembered as an object. -->
+          <div class="icon">
+            <svg class = "w-6 h-6" fill="none" stroke="currentcolor" viewbox="0
+            0 24 24"
+          </div>
+          <p class="sub-feature-text">Certificate Completion</p>
+        </div>
+      </div>
+      <div class="button container">
+        <a class="button" href="">Join now</a>
+      </div>
+    </div>
+  </body>
+</html>
