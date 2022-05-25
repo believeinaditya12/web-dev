@@ -1,66 +1,65 @@
+<!-- creating the landing page structure -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
     />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="shared.css" />
-    <link rel="stylesheet" href="placessecond.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Goals</title>
+    <title>Flexbox</title>
   </head>
   <body>
-    <header>
+    <header id="container">
       <div id="page-logo">
-        <a href="/index.html">Travel Goals</a>
+        <a href="index.html">Travel Goals</a>
       </div>
       <nav>
         <ul>
-          <li><a href="/places.html">Destinations</a></li>
+          <li><a href="places.html">Destinations</a></li>
           <li><a href="">About</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <!-- to add more images you have to duplicate the elements of the list li  -->
+      <!-- id hero is the background image related things -->
+      <section id="hero">
+        <!-- id="hero-content" is to write content on the background image -->
+        <div id="hero-content">
+          <h1>Adi's Travel Page</h1>
+          <h2>Let's explore the world together!</h2>
+          <a href="places.html">Discover places</a>
+        </div>
+      </section>
+      <!-- nesting the elements into each other and we have to merge the two sections on the one page  -->
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <ul id="destinations">
+          <li class="destination">
+            <img src="miami.jpg" alt="Miami streets on sunny day" />
+            <p>Miami <strong>USA</strong></p>
+          </li>
+          <li class="destination">
+            <img src="munich.jpg" alt="Munich stadium in winter" />
+            <p>Munich <strong>Germany</strong></p>
+          </li>
+          <li class="destination">
+            <img src="barcelona.jpg" alt="Palm beach in Barcelona" />
+            <p>Barcelona <strong>Spain</strong></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
       <ul>
         <li>
-          <img src="barcelona.jpg" alt="City of Barcelona" />
-          <div class="item-content">
-            <h2>Barcelona</h2>
-            <p>Above image is of Barcelona.</p>
-          </div>
-          <div class="actions">
-            <a href="https://en.wikipedia.org/wiki/Barcelona">Explore</a>
-          </div>
-        </li>
-        <li>
-          <img src="miami.jpg" alt="Miami Beach" />
-          <div class="item-content">
-            <h2>Miami beach</h2>
-            <p>Above image is of Miami.</p>
-          </div>
-          <div class="actions">
-            <a href="https://en.wikipedia.org/wiki/Miami_Beach,_Florida"
-              >Explore</a
-            >
-          </div>
-        </li>
-        <li>
-          <img src="oceanimage.jpg" alt="Ocean" />
-          <div class="item-content">
-            <h2>Image of Ocean</h2>
-            <p>Above image is of Ocean.</p>
-          </div>
-          <div class="actions">
-            <a href="https://en.wikipedia.org/wiki/Ocean">Explore</a>
-          </div>
+          <a href="https://www.instagram.com">instagram</a>
         </li>
       </ul>
-    </main>
-    <footer>I like to do travelling</footer>
+    </footer>
   </body>
 </html>
