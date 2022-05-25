@@ -1,6 +1,8 @@
 html {
-  background-color: rgb(236, 236, 236);
-  font-family: "krub", "sans-serif";
+  --color-grey-100: rgb(236, 236, 236);
+  /* background-color: rgb(236, 236, 236); */
+  background-color: var(--color-grey-100);
+  font-family: knub, sans-serif;
   font-weight: 500;
 }
 .card-container {
@@ -12,57 +14,76 @@ html {
 h1 {
   color: rgb(58, 58, 58);
   text-align: left;
-  padding: 30px 50px 0px 50px;
+  padding: 20px 20px 0px 20px;
   margin: 10px 0;
   font-family: "Zilla Slab", serif;
   font-weight: 600;
 }
 .card-info {
-  color: rgb(134, 134, 134);
+  color: black;
   text-align: left;
   padding: 0 50px;
   margin: 10px 0 30px 0;
 }
 .price {
   display: flex;
-  width: 10px;
-  padding: 2px;
-  margin: 5px;
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  padding: 0 50px;
+  margin: 10px 0 30px 0;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: aqua;
+}
+.price-info {
+  color: black;
+  text-align: left;
+  padding: 0 50px;
+  margin: 10px 0 30px 0;
 }
 .sub-details {
   width: 300px;
   margin: 30px 50px;
 }
-.sub-feature {
+/* The flex CSS shorthand property is the combination of flex-grow, flex-shrink, and flex-basis property. It is used to set the length of flexible items. */
+/* .sub-feature {
   display: flex;
+} */
+.sub-feature-text {
+  text-align: left;
+  color: rgb(58, 58, 58);
+  padding: 5px;
+  margin: 5px;
 }
+/* if we not design this display flex feature then we can't make box like feature*/
 .icon {
   display: flex;
   width: 10px;
 }
-.sub-feature-text {
-  color: rgb(58, 58, 58);
-  padding: 2px;
-  margin: 5px;
-}
-.button-container {
+/* .button-container {
   text-align: center;
   margin: 30px 0 0 0;
-}
+} */
 .button {
   color: rgb(0, 170, 255);
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-  width: 70%;
-  padding: 10px;
-  margin: 0 0 30px 0;
-  border: 2px solid rgb(224, 224, 224);
+  width: 100%;
+  margin: 10px 0 10px 0;
+  /* border: 2px solid rgb(224, 224, 224); */
   font-size: 18px;
   font-weight: 600;
 }
+.button-container {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  margin: 50px;
+  box-shadow: 3px 3px 10px rgb(201, 200, 200);
+}
 .button:hover {
-  color: white;
-  background-color: rgb(0, 170, 255);
-  border: 2px solid rgb(255, 255, 255);
+  color: rgb(25, 25, 25);
 }
