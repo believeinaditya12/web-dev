@@ -9,29 +9,76 @@
      <link rel="preconnect" href="">
 </head>
 <body>
+<header>
+<h1>Demo Form</h1>
+</header>
 <!-- The method attribute specifies how to send form-data (the form-data is sent to the page specified in the action -->
 <!-- attribute). -->
 <!-- <form action="/user-data" method="POST"> -->
-<form action="/" method="GET">
-   <label for="username">Your name</label>
-   <input type="text" name="user-name" id="username"/>
+
+   <!-- <ul>
+    <li>
+<label for="userpassword">Your password</label>
+<input type="password" name="user-password" id="userpassword">
+  </li>
+   <li>
+</li>
+   </ul> -->
+<form action="/" method="GET" novalidate>
+    <section>
+<label for="username">Your name</label>
+<input type="text" name="user-name" id="username" required placeholder="Aditya"/>
+  </section>
+    <h2>More details</h2>
+    <label for="usermessage">Your message</label>
+     <textarea id="usermessage"></textarea>
+   <input type="text" name="user-text" id="usertext">
    <label for="usermail">Your email address </label>
    <input type="email" name="user-email" id="useremail"/>
    <label for="userage">Your age</label>
-   <input type="number" step="1" id="userage" name="user-age">
-   <label for="userpassword">Your password</label>
-   <input type="password" name="user-password" id="userpassword">
+   <input type="number" step="1" id="userage" required min="18" max="100">
+  <!-- required is the validation attribute -->
    <label for="birthdate">Your birthdate</label>
-   <input type="date" name="user-birthdate" id="birthdate">
+   <input type="date" name="user-birthdate" id="birthdate" required>
+    <!-- The <hr> tag defines a thematic break in an HTML page -->
+   <hr/> 
+   <label for="favourite-color">Your favourite color</label>
+   <select id="favourite-color" name="favourite-color"> 
+          <option value="blue">My favourite color is blue</option>
+          <option>Black</option>
+          <option>Red</option>
+   </select>
     <h2>How should we verify your account?</h2>
-    <input type="radio" />
-     <label>Via text message(SMS) </label>
-    <input type="radio" />
-    <label>Via a phone call </label>
-    <input type="radio" />
-    <label>Via an email</label>
-    <button>Submit</button>
+     <div class="form-control-inline">
+    <input type="radio" name="verify" id="verify-text-message" value="text-message">
+    <label for="verify-text-message">Via text message(SMS) </label>
+    </div>
+     <div class="form-control-inline">
+    <input type="radio" name="verify" id="verify-phone" value="phone"/>
+    <label for="verify-phone">Via a phone call </label>
+    </div>
+     <div  class="form-control-inline">
+    <input type="radio" name="verify" id="verify-email" value="email" />
+    <label for="verify-email">Via an email</label>
+    </div>
+     <div class="form-control-line">
+     <input type="checkbox" id="contact-email" name="terms"/>
+    <label for="contact-email">Contact me via email</label>
+    </div>
+     <div class="form-control-line">
+     <input type="checkbox" id="contact-phone" name="terms"/>
+    <label for="contact-phone">Contact me via phone</label>
+    </div>
+     <section>
+    <div class="form-control-line">
+        <input type="checkbox" id="agree-terms" name="terms" />
+        <label for="agree-terms">Agree to terms?</label>
+    </div>
+    </section>
+    <section>
+    <button type="reset">Clear</button>
+    <button type="submit">Submit</button>
+    </section>
 </form>
-<!-- </form> -->
 </body>
 </html>
