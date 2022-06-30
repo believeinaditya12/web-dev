@@ -1,19 +1,18 @@
-let age = 32;
-let userName = 'Max'
-let hobbies = ['Sports', 'Cooking', 'Reading']
-let job = { title: 'Developer', place: 'New York', salary: 50000 };
-let totaladultyears
-function calculateadultyears(userage) {
- return userage-18
+const nameInputElement = document.getElementById('product-name');
+const remainingCharsElement = document.getElementById('remaining-chars');
+const maxalloweschars = nameInputElement.maxLength;
+
+function updateremainingcharacters() {
+    const enteredValue = nameInputElement.value;
+    const remainingCharacters = maxalloweschars - enteredValue.length;
+     remainingCharsElement.textContent = remainingCharacters
+    if (remainingCharacters <= 10) {
+        nameInputElement.classList.add('warning')
+        remainingCharsElement.classList.add('warning');
+    }
+    else {
+      nameInputElement.classList.remove('warning')
+        remainingCharsElement.classList.remove('warning');
+    }
 }
-totaladultyears = calculateadultyears(age)
-alert(totaladultyears)
-age = 45
-totaladultyears = calculateadultyears(age)
-alert(totaladultyears)
-alert(hobbies);
-function 
-// use alert(hobbies[0]) if we want to use only one string in the alert section
-alert(job.title)
-let adultyears = age - 18
-alert(adultyears)
+nameInputElement.addEventListener('input',updateremainingcharacters);
